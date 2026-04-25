@@ -1,6 +1,6 @@
-namespace RubyBot.Worker;
+﻿namespace RubyBot.Worker;
 
-public class Worker(ILogger<Worker> logger) : BackgroundService
+public class DiscordBotHostedService(ILogger<DiscordBotHostedService> logger) : BackgroundService
 {
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -10,6 +10,7 @@ public class Worker(ILogger<Worker> logger) : BackgroundService
             {
                 logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
             }
+
             await Task.Delay(1000, stoppingToken);
         }
     }

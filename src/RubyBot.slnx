@@ -1,4 +1,6 @@
 <Solution>
   <Project Path="RubyBot.Application/RubyBot.Application.csproj" />
+  <Project Path="RubyBot.Contracts/RubyBot.Contracts.csproj" />
+  <Project Path="RubyBot.Infrastructure.Lavalink/RubyBot.Infrastructure.Lavalink.csproj" />
   <Project Path="RubyBot.Worker/RubyBot.Worker.csproj" />
 </Solution>
