@@ -1,0 +1,66 @@
+# Environment files with sensitive data
+.env
+*.env
+.env.*
+!.env.example
+frontend/.env.local
+
+# NuGet configuration with credentials
+nuget.config
+backend/nuget.config
+
+# Docker volumes
+postgres_data/
+minio_data/
+seq_data/
+
+# Database backups
+backups/
+
+# Claude Code (local permissions are personal)
+.claude/settings.local.json
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Bb]in\\[Dd]ebug/
+[Bb]in\\[Rr]elease/
+[Oo]bj\\[Dd]ebug/
+[Oo]bj\\[Rr]elease/
+
+# .NET
+*.cache
+*.dll
+*.exe
+*.pdb
+*.suo
+*.user
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend local workspace
+frontend/project/
+.collaborator

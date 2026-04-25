@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="RubyBot.Application/RubyBot.Application.csproj" />
+  <Project Path="RubyBot.Worker/RubyBot.Worker.csproj" />
+</Solution>
