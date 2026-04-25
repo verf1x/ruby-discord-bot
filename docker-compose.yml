@@ -1,0 +1,11 @@
+services:
+  lavalink:
+    image: ghcr.io/lavalink-devs/lavalink:4.1.1
+    container_name: lavalink_server
+    ports:
+      - "2333:2333"
+    environment:
+      - _JAVA_OPTIONS=-Xmx512M
+    volumes:
+      - ./lavalink.yaml:/opt/Lavalink/lavalink.yml
+    restart: unless-stopped
